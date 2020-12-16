@@ -1,0 +1,30 @@
+{$ad1}
+<div class="row-body{$content_class}">
+	{$plugins}
+	{$cover}
+	<div class="nine columns" id="messages">
+		{$top}
+		<div id="load-content"></div>
+		{$rows}
+	<div id="profile-card"></div>
+	</div>
+	<div class="three columns">
+		{$sidebar}
+	</div>
+</div>
+{$ad2}
+<div id="likes" class="modal-large">
+	<div class="modal-container modal-container-large">
+		<div class="modal-inner">
+			<div class="modal-title">{$lng->people_who_like_this}</div>
+		</div>
+		<div class="message-divider"></div>
+		<div class="modal-inner modal-inner-large">
+			<div id="likes-result" class="modal-listing-results scrollable"></div>
+		</div>
+		<div class="message-divider"></div>
+		<div class="modal-menu">
+			<div class="modal-cancel button-normal" id="delete-cancel"><a onclick="likesModal(0, 0, 1)">{$lng->close}</a></div>
+		</div>
+	</div>
+</div>

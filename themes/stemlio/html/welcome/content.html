@@ -1,0 +1,73 @@
+{$plugins}
+<div class="row-welcome{$content_class}">
+	<div class="row-body">
+		<div class="welcome-inner">
+			<div class="welcome-message">
+				<div class="welcome-title">
+					{$lng->welcome_title}
+				</div>
+				<div class="welcome-desc">
+					{$lng->welcome_desc}
+				</div>
+				<div class="welcome-about">
+					{$lng->welcome_about}
+				</div>
+			</div>
+			<div class="welcome-inputs">
+				<form action="{$welcome_url}" method="POST" autocomplete="off">
+					{$registerMsg}
+					<!--<input type="text" name="first_name" placeholder="{$lng->first_name}">-->
+					<!--<input type="text" name="last_name" placeholder="{$lng->last_name}">-->
+					<input type="text" name="username" placeholder="{$lng->username}">
+					<input type="password" name="password" placeholder="{$lng->password}">
+					<input type="text" name="email" placeholder="{$lng->email}">
+					{$captcha}
+					<button type="submit" name="register"  class="register-button">{$lng->register}</button>{$fblogin}
+				</form>
+				<br>
+				<form action="{$welcome_url}" method="POST" autocomplete="off">
+					{$loginMsg}
+					<input type="text" name="username" placeholder="{$lng->username_or_email}">
+					<input type="password" name="password" placeholder="{$lng->password}">
+					<!--<div class="remember-me"><input type="checkbox" name="remember" id="remember" value="1"><label for="remember">{$lng->remember_me}</label></div>-->
+					<button type="submit" name="login" class="login-button">{$lng->login}</button><span class="forgot-password"><a href="{$recover_url}" rel="loadpage">{$lng->forgot_password}</a></span>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="welcome-full welcome-white">
+	<div class="welcome-inner">
+		<div class="welcome-row-title">{$lng->latest_users}</div>
+		{$rows}
+	</div>
+</div>
+<div class="welcome-full">
+	<div class="welcome-inner">
+		<div class="welcome-box">
+			<div class="welcome-box-title">
+				{$lng->welcome_one}
+			</div>
+			<div class="welcome-box-desc">
+				{$lng->welcome_one_desc}
+			</div>
+		</div>
+		<div class="welcome-box">
+			<div class="welcome-box-title">
+				{$lng->welcome_two}
+			</div>
+			<div class="welcome-box-desc">
+				{$lng->welcome_two_desc}
+			</div>
+		</div>
+		<div class="welcome-box">
+			<div class="welcome-box-title">
+				{$lng->welcome_three}
+			</div>
+			<div class="welcome-box-desc">
+				{$lng->welcome_three_desc}
+			</div>
+		</div>
+	</div>
+</div>
+{$ad}
