@@ -72,7 +72,7 @@ function menu($user) {
 		return $menu;
 	} else {
 		// Else show the LogIn Register button
-		return '<a href="'.permalink($CONF['url'].'/index.php?a=welcome').'" rel="loadpage" title="'.$LNG['connect'].'"><div class="topbar-button">'.$LNG['connect'].'</div></a>'.$admin_url;
+		return '<a href="'.permalink($CONF['url'].'/index.php?a=welcome').'" rel="loadpage" title="'.$LNG['signup'].'"><div class="topbar-button">'.$LNG['signup'].'</div></a>'.$admin_url;
 	}
 }
 function info_urls() {
@@ -4540,9 +4540,9 @@ class feed {
 		if($friends == false) {
 			return false;
 		} elseif($friends == 'profile') {
-			$list = array('food', 'game', 'map', 'music', 'picture', 'shared', 'video', 'visited');
+			$list = array('map', 'picture', 'shared', 'video', 'visited');
 		} elseif($friends) {
-			$list = array('food', 'game', 'map', 'music', 'picture', 'shared', 'video', 'visited');
+			$list = array('map', 'picture', 'shared', 'video', 'visited');
 		}
 		return $list;
 	}

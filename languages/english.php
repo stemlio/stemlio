@@ -10,28 +10,29 @@ $url = 'http://localhost/';
 
 $LNG['lang_direction'] = 'ltr';
 
-$LNG['user_success'] = 'User succesfully created';
-$LNG['user_exists'] = 'This username already exists';
-$LNG['email_exists'] = 'This email is already in use';
-$LNG['all_fields'] = 'All fields are required';
-$LNG['user_alnum'] = 'The username must consists only from letters and numbers';
-$LNG['user_too_short'] = 'The username must be between 3 and 32 characters';
-$LNG['user_limit'] = 'Too many accounts created from this IP';
-$LNG['invalid_email'] = 'Invalid email';
-$LNG['invalid_user_pw'] = 'Invalid username or password';
-$LNG['invalid_captcha'] = 'Invalid captcha';
-$LNG['activate_email'] = 'An activation link has been sent to your email';
-$LNG['account_activated'] = 'Your account has been activated';
-$LNG['log_out'] = 'Log Out';
+$LNG['user_success'] = 'User succesfully created.';
+$LNG['user_exists'] = 'This username already exists.';
+$LNG['email_exists'] = 'This email is already in use.';
+$LNG['all_fields'] = 'All fields are required.';
+$LNG['user_alnum'] = 'The username must consists only from letters and numbers.';
+$LNG['user_too_short'] = 'The username must be between 3 and 32 characters.';
+$LNG['user_limit'] = 'Too many accounts created from this IP.';
+$LNG['invalid_email'] = 'Invalid email.';
+$LNG['invalid_user_pw'] = 'Invalid username or password.';
+$LNG['invalid_captcha'] = 'Invalid captcha.';
+$LNG['activate_email'] = 'An activation link has been sent to your email.';
+$LNG['account_activated'] = 'Your account has been activated.';
+$LNG['log_out'] = 'Logout';
 $LNG['hello'] = 'Hello';
 $LNG['register'] = 'Register';
 $LNG['login'] = 'Login';
+$LNG['signup'] = 'Sign Up';
 $LNG['connect'] = 'Connect';
 $LNG['password'] = 'Password';
 $LNG['username'] = 'Username';
 $LNG['email'] = 'Email';
 $LNG['captcha'] = 'Captcha';
-$LNG['username_or_email'] = 'Username or email';
+$LNG['username_or_email'] = 'Username or Email';
 $LNG['welcome_title'] = 'Welcome';
 $LNG['welcome_desc'] = 'to our social network';
 $LNG['welcome_about'] = 'share your memories, connect with others, make new friends.';
@@ -154,7 +155,7 @@ $LNG['message_private'] = 'Sorry, this message is private, only the author of th
 $LNG['message_private_ttl'] = 'Private Message';
 $LNG['message_semi_private'] = 'Sorry, this message is private, only the friends and the author of this message can see it.';
 $LNG['message_semi_private_ttl'] = 'Private Message';
-$LNG['login_to_lcs'] = 'Log-in to Like, Comment or Share';
+$LNG['login_to_lcs'] = 'Login to like, comment, or share.';
 $LNG['message'] = 'Message';
 $LNG['comment'] = 'Comment';
 $LNG['share'] = 'Share';
@@ -185,10 +186,10 @@ $LNG['rep_comment'] = 'Comment';
 
 // SIDEBAR
 $LNG['groups'] = 'Groups';
-$LNG['events'] = 'Events';
+$LNG['events'] = 'Filters';
 $LNG['archive'] = 'Archives';
 $LNG['recent'] = 'Recent';
-$LNG['all_events'] = 'All events';
+$LNG['all_events'] = 'All';
 $LNG['sidebar_map'] = 'Places';
 $LNG['sidebar_food'] = 'Meals';
 $LNG['sidebar_visited'] = 'Visits';
@@ -200,7 +201,7 @@ $LNG['sidebar_shared'] = 'Shared';
 $LNG['sidebar_pages'] = 'Pages';
 $LNG['sidebar_groups'] = 'Groups';
 $LNG['sidebar_pokes'] = 'Pokes';
-$LNG['all_time'] = 'All time';
+$LNG['all_time'] = 'All';
 $LNG['friends'] = 'Friends';
 $LNG['mutual' ] = 'Mutual';
 $LNG['welcome'] = 'Profile';
@@ -242,9 +243,9 @@ $LNG['send_message'] = 'Send Message';
 // MESSAGE FORM
 $LNG['label_food'] = 'Add a place where you ate at';
 $LNG['label_game'] = 'Add a played game';
-$LNG['label_visited'] = 'Add a visited location';
-$LNG['label_map'] = 'Add a place';
-$LNG['label_video'] = 'Share a movie or a link from YouTube or Vimeo';
+$LNG['label_visited'] = 'Add a visited location.';
+$LNG['label_map'] = 'Add a place.';
+$LNG['label_video'] = 'Share a YouTube link.';
 $LNG['label_music'] = 'Share a song or a link from SoundCloud';
 $LNG['label_image'] = 'Upload images';
 $LNG['message_form'] = 'What\'s on your mind?';
@@ -255,7 +256,7 @@ $LNG['event_not_exist'] = 'The selected event does not exist, please refresh the
 $LNG['change_privacy'] = 'Who should see the message';
 
 $LNG['message_too_long'] = 'Sorry, but the maximum characters allowed per message is <strong>%s</strong>.';
-$LNG['files_selected'] = 'image(s) selected';
+$LNG['files_selected'] = 'image(s) selected.';
 $LNG['too_many_images'] = 'The maximum number of images allowed to be uploaded per message is <strong>%s</strong>, you tried to upload <strong>%s</strong> images.';
 
 // USER PANEL
@@ -878,7 +879,7 @@ $LNG['type_message'] = 'Type a message...';
 $LNG['follows'] = 'Follows';
 $LNG['followed_by'] = 'Followed by';
 $LNG['people'] = 'user(s)';
-$LNG['no_info_avail'] = 'No information available';
+$LNG['no_info_avail'] = 'No information available.';
 $LNG['account_suspended'] = 'This account is currently suspended.';
 $LNG['account_not_activated'] = 'This account is not activated. <a href="%s">Click here</a> to resend the activation email.';
 $LNG['re_activate_already'] = 'An activation email has already been sent today';
@@ -886,7 +887,7 @@ $LNG['re_activate_sent'] = 'An activation email has been sent';
 
 // GENERAL
 $LNG['title_profile'] = 'Profile';
-$LNG['title_feed'] = 'News Feed';
+$LNG['title_feed'] = 'Feed';
 $LNG['title_post'] = 'Post';
 $LNG['title_messages'] = 'Messages';
 $LNG['title_settings'] = 'Settings';

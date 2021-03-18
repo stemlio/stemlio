@@ -7,10 +7,11 @@
 <link rel="shortcut icon" href="{$url}/favicon.ico">
 <link href="{$url}/{$theme_path}/{$theme_name}/style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">baseUrl = "{$url}"; token_id = "{$token_id}"; search_users_url = "{$search_users_url}"; search_tags_url = "{$search_tags_url}"; search_groups_url = "{$search_groups_url}"; search_pages_url = "{$search_pages_url}"; lng_download = "{$lng->download}"; lng_close = "{$lng->close}"; lng_just_now = "{$lng->just_now}"; lng_ta_second = "{$lng->ta_second}"; lng_ta_seconds = "{$lng->seconds}"; lng_ta_minute = "{$lng->ta_minute}"; lng_ta_minutes = "{$lng->ta_minutes}"; lng_ta_hour = "{$lng->ta_hour}"; lng_ta_hours = "{$lng->ta_hours}"; lng_ta_day = "{$lng->ta_day}"; lng_ta_days = "{$lng->ta_days}"; lng_ta_week = "{$lng->ta_week}"; lng_ta_weeks = "{$lng->ta_weeks}"; lng_ta_month = "{$lng->ta_month}"; lng_ta_months = "{$lng->ta_months}"; lng_ta_year = "{$lng->ta_year}"; lng_ta_years = "{$lng->ta_years}"; lng_ago = "{$lng->ago}";</script>
+
 <script type="text/javascript" src="{$url}/{$theme_url}/js/jquery.js"></script>
 <script type="text/javascript" src="{$url}/{$theme_url}/js/jquery.timeago.js"></script>
 <script type="text/javascript" src="{$url}/{$theme_url}/js/functions.js"></script>{$styles}{$scripts}
-</head>
+</head> 
 <body>
 <div id="loading-bar"><dd></dd><dt></dt></div>
 <div class="topbar">
@@ -102,12 +103,11 @@
 			{$info_urls}<span><a href="{$url}/index.php?a=admin" rel="loadpage">{$lng->title_admin}</a></span>
 		</div>
 		<div class="footer-languages">
-			{$lng->language}: {$language}
+			{$footer} &copy; {$year}
 		</div>
-		<div class="footer-languages">
-			Copyright &copy; {$year} {$footer}. {$lng->all_rights_reserved}. {$powered_by}
-		</div>
+		
 	</div>
+	<script type="text/javascript" src="{$url}/{$theme_url}/js/animation.js"></script>
 </div>
 {$tracking_code}
 </body>
