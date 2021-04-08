@@ -2134,7 +2134,7 @@ box-sizing: border-box;
 .register-button {
 margin: 0 10px 0 0;
 color: #FFF;
-border-radius: 5px;
+border-radius: 10px;
 padding: 10px;
 text-transform: uppercase;
 background: #4f7df3;
@@ -2168,7 +2168,7 @@ background: #374C80;
 .login-button {
 margin: 0 10px 0 0;
 color: #FFF;
-border-radius: 5px;
+border-radius: 10px;
 padding: 10px;
 text-transform: uppercase;
 background:#4f7df3;
