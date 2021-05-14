@@ -275,50 +275,50 @@ $LNG['user_ttl_avatar'] = 'Profile Images Settings';
 $LNG['user_ttl_notifications'] = 'Notifications Settings';
 $LNG['user_ttl_privacy'] = 'Privacy Settings';
 
-$LNG['blocked_desc'] = 'Blocked persons can no longer see things you post on your timeline, message or add you as a friend.';
+$LNG['blocked_desc'] = 'Blocked users can no longer see your account, posts, and timeline.';
 $LNG['delete_acc_desc'] = 'Your account will be permanently deleted along with all the related content of it.';
 
 $LNG['ttl_first_name'] = $LNG['first_name'] = 'First Name';
-$LNG['sub_first_name'] = 'Enter your first name';
+$LNG['sub_first_name'] = 'Enter your first name.';
 
 $LNG['ttl_last_name'] = $LNG['last_name'] = 'Last Name';
-$LNG['sub_last_name'] = 'Enter your last name';
+$LNG['sub_last_name'] = 'Enter your last name.';
 
 $LNG['ttl_email'] = 'Email';
-$LNG['sub_email'] = 'Email will not be displayed';
+$LNG['sub_email'] = 'Your email is private (not displayed).';
 
 $LNG['address'] = 'Address';
-$LNG['sub_address'] = 'The address you live at';
+$LNG['sub_address'] = 'Select the address you live at.';
 
 $LNG['ttl_location'] = 'City';
-$LNG['sub_location'] = 'The city you live in';
+$LNG['sub_location'] = 'Select the city you live in.';
 
 $LNG['ttl_website'] = 'Website';
-$LNG['sub_website'] = 'Your website, blog or personal page';
+$LNG['sub_website'] = 'Your website for others to see.';
 
 $LNG['ttl_gender'] = 'Gender';
-$LNG['sub_gender'] = 'Select your gender';
+$LNG['sub_gender'] = 'Select your gender.';
 
 $LNG['interests'] = 'Interests';
 $LNG['sub_interested_in'] = 'Persons you\'re interested in';
 
 $LNG['ttl_country'] = 'Country';
-$LNG['sub_country'] = 'The country you live in';
+$LNG['sub_country'] = 'Select the country you live in.';
 
 $LNG['ttl_work'] = 'Workplace';
-$LNG['sub_work'] = 'Enter the company name where you\'re working';
+$LNG['sub_work'] = 'Enter the company you work at.';
 
 $LNG['ttl_school'] = 'School';
-$LNG['sub_school'] = 'Enter the school name you attended';
+$LNG['sub_school'] = 'Enter the school you attend(ed).';
 
 $LNG['ttl_profile'] = 'Profile';
-$LNG['sub_profile'] = 'Profile visibility';
+$LNG['sub_profile'] = 'Who can see your posts/account.';
 
 $LNG['ttl_messages'] = 'Message';
-$LNG['sub_messages'] = 'The default way of posting messages';
+$LNG['sub_messages'] = 'Who you post your default messages to.';
 
 $LNG['ttl_offline'] = 'Chat Status';
-$LNG['sub_offline'] = 'The visibility status for the Chat';
+$LNG['sub_offline'] = 'Your chat visibility status.';
 
 $LNG['ttl_facebook'] = 'Facebook';
 $LNG['sub_facebook'] = 'Your facebook profile ID.';
@@ -330,10 +330,10 @@ $LNG['ttl_google'] = 'Google+';
 $LNG['sub_google'] = 'Your google+ profile ID.';
 
 $LNG['ttl_bio'] = 'Bio';
-$LNG['sub_bio'] = 'About you (160 characters or less)';
+$LNG['sub_bio'] = 'Your bio is the spot to tell people who you are and what you do.';
 
 $LNG['ttl_birthdate'] = 'Birth Date';
-$LNG['sub_birthdate'] = 'Select the date you were born';
+$LNG['sub_birthdate'] = 'Select your date of birth above. ';
 
 $LNG['ttl_upload_avatar'] = 'Upload the selected profile image';
 $LNG['ttl_delete_avatar'] = 'Delete your current profile image';
@@ -345,10 +345,10 @@ $LNG['report'] = 'Report';
 $LNG['delete_message'] = 'Delete Message';
 $LNG['remove_user'] = 'Remove User';
 
-$LNG['opt_offline_off'] = 'Online (when available)';
-$LNG['opt_offline_on'] = 'Always Offline';
+$LNG['opt_offline_off'] = 'Online';
+$LNG['opt_offline_on'] = 'Offline';
 
-$LNG['no_gender'] = 'No Gender';
+$LNG['no_gender'] = 'Other';
 $LNG['male'] = 'Male';
 $LNG['female'] = 'Female';
 $LNG['men'] = 'Men';
@@ -361,13 +361,13 @@ $LNG['work_and_education'] = 'Work and Education';
 
 $LNG['ttl_upload'] = 'Upload';
 $LNG['ttl_new_password'] = 'New Password';
-$LNG['sub_new_password'] = 'Enter a new password (at least 6 characters)';
+$LNG['sub_new_password'] = 'Enter a new password (at least 6 characters).';
 $LNG['ttl_repeat_password'] = 'Repeat Password';
-$LNG['sub_repeat_password'] = 'Repeat your new password';
+$LNG['sub_repeat_password'] = 'Repeat your new password.';
 $LNG['ttl_current_password'] = 'Current Password';
-$LNG['sub_current_password'] = 'Enter your current password';
+$LNG['sub_current_password'] = 'Enter your current password.';
 $LNG['save_changes'] = 'Save Changes';
-$LNG['profile_images_desc'] = 'Click on the profile picture or cover to change them';
+$LNG['profile_images_desc'] = 'Click on your avatar or banner to change or remove them.';
 $LNG['confirm'] = 'Confirm';
 $LNG['approve'] = 'Approve';
 $LNG['requests'] = 'Requests';
@@ -382,49 +382,49 @@ $LNG['default'] = 'Default';
 $LNG['make_default'] = 'Make Default';
 
 $LNG['ttl_notificationl'] = 'Likes Notifications';
-$LNG['sub_notificationl'] = 'Display alert and notifications for <strong>Likes</strong>';
+$LNG['sub_notificationl'] = 'Recieve alerts/notifications for likes.';
 
 $LNG['ttl_notificationc'] = 'Comments Notifications';
-$LNG['sub_notificationc'] = 'Display alert and notifications for <strong>Comments</strong>';
+$LNG['sub_notificationc'] = 'Recieve alerts/notifications for comments.';
 
 $LNG['ttl_notifications'] = 'Messages Notifications';
-$LNG['sub_notifications'] = 'Display alert and notifications for <strong>Shared Messages</strong>';
+$LNG['sub_notifications'] = 'Recieve alerts/notifications for shared messages.';
 
 $LNG['ttl_notificationd'] = 'Chat Notifications';
-$LNG['sub_notificationd'] = 'Display alert and notifications for <strong>Chats</strong>';
+$LNG['sub_notificationd'] = 'Recieve alerts/notifications for chats.';
 
 $LNG['ttl_notificationf'] = 'Friends Notifications';
-$LNG['sub_notificationf'] = 'Display alert and notifications for <strong>Confirmed Friendships</strong>';
+$LNG['sub_notificationf'] = 'Recieve alerts/notifications for new friends.';
 
 $LNG['ttl_notificationx'] = 'Pages Notifications';
-$LNG['sub_notificationx'] = 'Display alert and notifications for <strong>Like a Page</strong> invitations';
+$LNG['sub_notificationx'] = 'Recieve alerts/notifications for likes on your page(s).';
 
 $LNG['ttl_notificationg'] = 'Groups Notifications';
-$LNG['sub_notificationg'] = 'Display alert and notifications for <strong>Groups Invitations</strong>';
+$LNG['sub_notificationg'] = 'Recieve alerts/notifications for likes on your group(s).';
 
 $LNG['ttl_notificationp'] = 'Pokes Notifications';
-$LNG['sub_notificationp'] = 'Display alert and notifications for <strong>Pokes</strong>';
+$LNG['sub_notificationp'] = 'Recieve alerts/notifications for pokes.';
 
 $LNG['ttl_sound_nn'] = 'Notifications Sound';
-$LNG['sub_sound_nn'] = 'Play a sound when a new notification is received';
+$LNG['sub_sound_nn'] = 'Play a sound when a new notification is received.';
 
 $LNG['ttl_sound_nc'] = 'Chat Sound';
-$LNG['sub_sound_nc'] = 'Play a sound when a new chat message is received';
+$LNG['sub_sound_nc'] = 'Play a sound when a new chat message is received.';
 
 $LNG['ttl_email_comment'] = 'Emails on Comments';
-$LNG['sub_email_comment'] = 'Receive emails when someone comments on your messages';
+$LNG['sub_email_comment'] = 'Receive emails when someone comments on your messages.';
 
 $LNG['ttl_email_like'] = 'Emails on Likes';
-$LNG['sub_email_like'] = 'Receive emails when someone likes your messages';
+$LNG['sub_email_like'] = 'Receive emails when someone likes your messages.';
 
 $LNG['ttl_email_new_friend'] = 'Emails on Friendships';
-$LNG['sub_email_new_friend'] = 'Receive emails when someone sends or confirms a friend request';
+$LNG['sub_email_new_friend'] = 'Receive emails when someone sends or confirms a friend request.';
 
 $LNG['ttl_email_page'] = 'Email Page Invite';
-$LNG['sub_email_page'] = 'Receive emails when someone invites you to like a page';
+$LNG['sub_email_page'] = 'Receive emails when someone invites you to like a page.';
 
 $LNG['ttl_email_group'] = 'Email Group Invite';
-$LNG['sub_email_group'] = 'Receive emails when someone sends you a group invitation';
+$LNG['sub_email_group'] = 'Receive emails when someone sends you a group invitation.';
 
 $LNG['user_ttl_sidebar'] = 'Settings';
 
@@ -644,11 +644,11 @@ $LNG['page_url'] = 'Page URL';
 $LNG['public_page'] = 'Public Page';
 $LNG['page_content'] = 'Page Content';
 
-$LNG['sub_page_title'] = 'The page title (supports translatable strings)';
-$LNG['sub_page_url'] = 'The page URL (no special characters)';
-$LNG['sub_public_page'] = 'Display the page in footer and sidebar';
-$LNG['sub_page_content'] = 'The page content (supports translatable strings)';
-$LNG['url_exists'] = 'This page URL already exists';
+$LNG['sub_page_title'] = 'The page title (supports translatable strings).';
+$LNG['sub_page_url'] = 'The page URL (no special characters).';
+$LNG['sub_public_page'] = 'Display the page in footer and sidebar.';
+$LNG['sub_page_content'] = 'The page content (supports translatable strings).';
+$LNG['url_exists'] = 'This page URL already exists.';
 
 $LNG['per_page'] = '/ page';
 $LNG['per_ip'] = '/ IP';
@@ -660,11 +660,11 @@ $LNG['hour'] = 'hour';
 $LNG['recommended'] = 'recommended';
 $LNG['edit_user'] = 'Edit User';
 $LNG['username_to_edit'] = 'Username';
-$LNG['username_to_edit_sub'] = 'Enter the username you want to edit';
+$LNG['username_to_edit_sub'] = 'Enter the username you want to edit.';
 $LNG['group_to_edit'] = 'Group name';
-$LNG['group_to_edit_sub'] = 'Enter the group name you want to edit';
+$LNG['group_to_edit_sub'] = 'Enter the group name you want to edit.';
 $LNG['page_to_edit'] = 'Page name';
-$LNG['page_to_edit_sub'] = 'Enter the page name you want to edit';
+$LNG['page_to_edit_sub'] = 'Enter the page name you want to edit.';
 $LNG['chat_smiles'] = 'Add emoticons';
 $LNG['chat_picture'] = 'Upload image';
 $LNG['chat_camera'] = 'Take a photo';
@@ -705,9 +705,9 @@ $LNG['get_plugins'] = 'Get more Plugins';
 $LNG['get_languages'] = 'Get more Languages';
 
 // MANAGE REPORTS
-$LNG['admin_reports_ignore'] = 'Ignore the report and mark the content as safe';
-$LNG['admin_reports_delete'] = 'Delete the report and the reported content';
-$LNG['admin_reports_view'] = 'View the reported content';
+$LNG['admin_reports_ignore'] = 'Ignore the report and mark the content as safe.';
+$LNG['admin_reports_delete'] = 'Delete the report and the reported content.';
+$LNG['admin_reports_view'] = 'View the reported content.';
 
 // LIKES
 $LNG['like'] = 'Like';
@@ -744,7 +744,7 @@ $LNG['reset_key'] = 'Reset Key';
 $LNG['new_password'] = 'New Password';
 $LNG['password_recovery'] = 'Password Recovery';
 $LNG['recover']	= 'Recover';
-$LNG['recover_sub_username'] = 'Type in the username or email you want to recover the password';
+$LNG['recover_sub_username'] = 'Type in the username or email you want to recover the password for.';
 $LNG['tracking_code'] = 'Tracking Code';
 $LNG['friends_limit'] = 'You\'ve reached the friends limit';
 $LNG['user_friends_limit'] = 'This user reached the friends limit';
@@ -754,28 +754,28 @@ $LNG['last_online'] = 'Seen: %s';
 $LNG['create_page'] = 'Create Page';
 $LNG['edit_page'] = 'Edit Page';
 $LNG['delete_page'] = 'Delete Page';
-$LNG['page_sub_name'] = 'The page name (will appear in URL)';
-$LNG['page_sub_title'] = 'The page title (will appear on the page\'s title';
-$LNG['page_sub_description'] = 'The page description';
-$LNG['page_sub_website'] = 'Website URL';
+$LNG['page_sub_name'] = 'The URL of your page (ex: .../page/etc)';
+$LNG['page_sub_title'] = 'The title/name of your page.';
+$LNG['page_sub_description'] = 'The description for your page.';
+$LNG['page_sub_website'] = 'Website for users to see.';
 $LNG['profile_image'] = 'Profile Image';
 $LNG['cover_image'] = 'Cover Image';
-$LNG['page_sub_pimg'] = 'The page profile image';
-$LNG['page_sub_cover'] = 'The page cover image';
+$LNG['page_sub_pimg'] = 'The profile image for your page.';
+$LNG['page_sub_cover'] = 'The cover image for your page.';
 $LNG['category'] = 'Category';
-$LNG['page_sub_category'] = 'The page category';
+$LNG['page_sub_category'] = 'The category of your page.';
 $LNG['phone'] = 'Phone';
-$LNG['page_sub_phone'] = 'Phone number';
-$LNG['page_sub_address'] = 'Physical address';
+$LNG['page_sub_phone'] = 'Phone number for users to contact.';
+$LNG['page_sub_address'] = 'Address if page is for company, etc.';
 
-$LNG['page_name_consist'] = 'Page name can only contain letters and numbers';
-$LNG['page_name_taken'] = 'This page name is already taken';
-$LNG['page_name_less'] = 'Page name should be less than %s characters';
-$LNG['page_title_less'] = 'Page title should be less than %s characters';
-$LNG['page_desc_less'] = 'Page description should be less than %s characters';
+$LNG['page_name_consist'] = 'Page name can only contain letters and numbers.';
+$LNG['page_name_taken'] = 'This page name is already taken.';
+$LNG['page_name_less'] = 'Page name should be less than %s characters.';
+$LNG['page_title_less'] = 'Page title should be less than %s characters.';
+$LNG['page_desc_less'] = 'Page description should be less than %s characters.';
 $LNG['invalid_phone'] = 'Phone number can only contain digits, plus (+) and minus (-) signs.';
-$LNG['page_delete_desc'] = 'Deleting a page will also delete its messages along with their content.';
-$LNG['page_deleted'] = 'The page <strong>%s</strong> has been deleted';
+$LNG['page_delete_desc'] = 'Deleting a page will delete all its content, likes, and messages permanently.';
+$LNG['page_deleted'] = 'The page <strong>%s</strong> has been deleted.';
 $LNG['page_maximum'] = 'You\'ve exceeded the maximum amount of pages allowed (%s).';
 $LNG['group_maximum'] = 'You\'ve exceeded the maximum amount of groups allowed (%s).';
 
@@ -798,48 +798,48 @@ $LNG['members'] = 'Members';
 $LNG['admins'] = 'Admins';
 $LNG['page'] = 'Page';
 $LNG['group'] = 'Group';
-$LNG['group_private'] = 'Sorry, but this group is private, only the member of this group can view the content.';
+$LNG['group_private'] = 'Sorry, but this group is private. Only members of this group can view its content.';
 $LNG['group_private_ttl'] = 'Private Group';
 $LNG['name'] = 'Name';
-$LNG['any_member'] = 'Any member';
+$LNG['any_member'] = 'Members';
 $LNG['posts'] = 'Posts';
-$LNG['group_sub_name'] = 'The group name (will appear in URL)';
-$LNG['group_sub_title'] = 'The group title (will appear on the group\'s title)';
-$LNG['group_sub_privacy'] = 'The group privacy';
-$LNG['group_sub_description'] = 'The group description';
-$LNG['group_sub_posts'] = 'Who can post in the group';
-$LNG['admins_posts'] = ', only admins can post';
-$LNG['members_posts'] = ', any member can post';
-$LNG['group_sub_cover'] = 'The group cover image';
+$LNG['group_sub_name'] = 'The URL of your group (ex: .../group/etc)';
+$LNG['group_sub_title'] = 'The title/name of your group.';
+$LNG['group_sub_privacy'] = 'The group privacy settings (ex: who can join?)';
+$LNG['group_sub_description'] = 'The description for your group.';
+$LNG['group_sub_posts'] = 'Who has access to post in the group.';
+$LNG['admins_posts'] = '';
+$LNG['members_posts'] = '';
+$LNG['group_sub_cover'] = 'The cover image for your page.';
 $LNG['public_group'] = 'Public Group';
 $LNG['private_group'] = 'Private Group';
 $LNG['x_members'] = '%s members';
 $LNG['join_group'] = 'Join Group';
 $LNG['pending_approval'] = 'Pending Approval';
-$LNG['search_this_group'] = 'Search this group';
+$LNG['search_this_group'] = 'Search Group';
 $LNG['invited'] = 'Invited';
 $LNG['member'] = 'Member';
 $LNG['invite'] = 'Invite';
 
-$LNG['group_name_consist'] = 'Group name can only contain letters and numbers';
-$LNG['group_name_taken'] = 'This group name is already taken';
-$LNG['group_name_less'] = 'Group name should be less than %s characters';
-$LNG['group_title_less'] = 'Group title should be less than %s characters';
-$LNG['group_desc_less'] = 'Group description should be less than %s characters';
+$LNG['group_name_consist'] = 'Group name can only contain letters and numbers.';
+$LNG['group_name_taken'] = 'This group name is already taken.';
+$LNG['group_name_less'] = 'Group name should be less than %s characters.';
+$LNG['group_title_less'] = 'Group title should be less than %s characters.';
+$LNG['group_desc_less'] = 'Group description should be less than %s characters.';
 $LNG['group_delete_desc'] = 'Deleting a group will also delete its messages along with their content.';
-$LNG['group_deleted'] = 'The group <strong>%s</strong> has been deleted';
+$LNG['group_deleted'] = 'The group <strong>%s</strong> has been deleted.';
 
 $LNG['invite_friends'] = 'Invite Friends';
 
 // PROFILE
-$LNG['profile_not_exists'] = 'Sorry, but this profile does not exists.';
-$LNG['group_not_exists'] = 'Sorry, but this group does not exists.';
-$LNG['page_not_exists'] = 'Sorry, but this page does not exists.';
-$LNG['profile_semi_private'] = 'Sorry, but this profile is private, only the friends of this user can view the profile.';
-$LNG['profile_private'] = 'Sorry, but this profile is completely private.';
+$LNG['profile_not_exists'] = 'Sorry, but this profile does not exist.';
+$LNG['group_not_exists'] = 'Sorry, but this group does not exist.';
+$LNG['page_not_exists'] = 'Sorry, but this page does not exist.';
+$LNG['profile_semi_private'] = 'Sorry, but this profile is private. Only friends of this user can view their profile.';
+$LNG['profile_private'] = 'Sorry, but this profile is private.';
 $LNG['profile_suspended'] = 'Sorry, but this profile has been suspended.';
-$LNG['profile_not_exists_ttl'] = 'Profile does not exists.';
-$LNG['group_not_exists_ttl'] = 'Group does not exists.';
+$LNG['profile_not_exists_ttl'] = 'Profile does not exist.';
+$LNG['group_not_exists_ttl'] = 'Group does not exist.';
 $LNG['profile_semi_private_ttl'] = 'Private profile';
 $LNG['profile_private_ttl'] = 'Private profile';
 $LNG['profile_suspended_ttl'] = 'Suspended Profile';
@@ -882,8 +882,8 @@ $LNG['people'] = 'user(s)';
 $LNG['no_info_avail'] = 'No information available.';
 $LNG['account_suspended'] = 'This account is currently suspended.';
 $LNG['account_not_activated'] = 'This account is not activated. <a href="%s">Click here</a> to resend the activation email.';
-$LNG['re_activate_already'] = 'An activation email has already been sent today';
-$LNG['re_activate_sent'] = 'An activation email has been sent';
+$LNG['re_activate_already'] = 'An activation email has already been sent today.';
+$LNG['re_activate_sent'] = 'An activation email has been sent.';
 
 // GENERAL
 $LNG['title_profile'] = 'Profile';

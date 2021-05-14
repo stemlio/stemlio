@@ -7612,6 +7612,10 @@ function percentage($current, $old) {
 function smiles() {
 	// Define smiles
 	$smiles = array(
+		':c'	=> 'clown.png',
+		':m'	=> 'sick.png',
+		'(p)'	=> 'poo.png',
+		':|'	=> 'neutral.png',
 		':)'	=> 'smile.png',
 		':('	=> 'sad.png',
 		';)'	=> 'wink.png',
