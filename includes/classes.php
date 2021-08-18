@@ -399,7 +399,7 @@ class register {
 		if(empty($this->username) && empty($this->password) && empty($email)) {
 			$error[] .= 'all_fields';
 		}
-		if(strlen($this->password) < 6) {
+		if(strlen($this->password) < 8) {
 			$error[] .= 'password_too_short';
 		}
 		if(!ctype_alnum($this->username)) {
@@ -451,7 +451,7 @@ class logIn {
 	public $url; 		// Installation URL Property
 	public $username;	// Username Property
 	public $password;	// Password Property
-	public $remember;	// Option to remember the usr / pwd (_COOKIE) Property
+	public $remember = 1;	// DEFAULT = create cookie: option to remember the usr / pwd (_COOKIE) Property
 	
 	function in() {
 		global $LNG;

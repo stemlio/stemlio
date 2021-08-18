@@ -24,7 +24,7 @@ $LNG['activate_email'] = 'An activation link has been sent to your email.';
 $LNG['account_activated'] = 'Your account has been activated.';
 $LNG['log_out'] = 'Logout';
 $LNG['hello'] = 'Hello';
-$LNG['register'] = 'Register';
+$LNG['register'] = 'Sign Up';
 $LNG['login'] = 'Login';
 $LNG['signup'] = 'Sign Up';
 $LNG['connect'] = 'Connect';
@@ -34,18 +34,13 @@ $LNG['email'] = 'Email';
 $LNG['captcha'] = 'Captcha';
 $LNG['username_or_email'] = 'Username or Email';
 $LNG['welcome_title'] = 'Welcome';
-$LNG['welcome_desc'] = 'to our social network';
-$LNG['welcome_about'] = 'share your memories, connect with others, make new friends.';
 $LNG['forgot_password'] = 'Forgot your password?';
-$LNG['remember_me'] = 'Remember me';
+$LNG['terms_conditions'] = 'By creating an account, you agree to our <a href="url" class="conditions-link" >terms & conditions</a>.';
 $LNG['all_rights_reserved'] = 'All rights reserved';
 
 $LNG['welcome_one'] = 'Connect';
 $LNG['welcome_two'] = 'Share';
 $LNG['welcome_three'] = 'Discover';
-$LNG['welcome_one_desc'] = 'Connect with your family and friends and share your moments';
-$LNG['welcome_two_desc'] = 'Share what\'s new and life moments with your friends';
-$LNG['welcome_three_desc'] = 'Discover new people, create new connections and make new friends';
 $LNG['latest_users'] = 'Latest users';
 
 // NOTIFICATION BOXES
@@ -61,18 +56,18 @@ $LNG['no_file'] = 'You did not selected any files to be uploaded, or the selecte
 $LNG['file_exceeded'] = 'The selected file size must not exceed <strong>%s</strong> MB.';
 $LNG['file_format'] = 'The selected file format is not supported. Upload <strong>%s</strong> file format';
 $LNG['image_removed'] = 'Image Removed';
-$LNG['bio_description'] = 'The Bio description should be %s characters or less.';
+$LNG['bio_description'] = 'The description should be %s characters or less.';
 $LNG['valid_email'] = 'Please enter a valid email.';
 $LNG['valid_url'] = 'Please enter a valid URL format.';
 $LNG['valid_country'] = 'Please enter a valid country.';
 $LNG['password_too_short'] = 'The password must contain at least 6 characters.';
 $LNG['password_not_match'] = 'The password did not match.';
 $LNG['wrong_current_password'] = 'The current password you\'ve entered is incorrect.';
-$LNG['username_not_found'] = 'We couldn\'t find the choosed username.';
+$LNG['username_not_found'] = 'We couldn\'t find the chosen username.';
 $LNG['userkey_not_found'] = 'The username or the reset key are wrong, make sure you\'ve entered the correct credentials.';
 $LNG['password_reseted'] = 'You have succcessfully reset your passsword, you can now log-in using the new credentials.';
 $LNG['email_sent'] = 'Email sent';
-$LNG['email_reset'] = 'An email containing password reset instructions has been sent. Please allow us up to 24 hours to deliver the message, also check your Spam box if you can\'t find in your Inbox.';
+$LNG['email_reset'] = 'An email containing password reset instructions has been sent. Please allow us up to 24 hours to deliver the message, also check your Spam box if you can\'t find it in your Inbox.';
 $LNG['user_has_been_deleted'] = 'User <strong>%s</strong> has been deleted.';
 $LNG['theme_changed'] = 'Theme changed';
 $LNG['notif_saved'] = 'Notifications changed';
@@ -129,7 +124,7 @@ $LNG['by'] = 'By';
 $LNG['settings'] = 'Settings';
 
 // FEED
-$LNG['welcome_feed_ttl'] = 'Welcome to your News Feed';
+$LNG['welcome_feed_ttl'] = 'Welcome to your Feed';
 $LNG['welcome_feed'] = 'All the posts from your friends will appear on this page, start by making new friends.';
 $LNG['leave_comment'] = 'Leave a comment...';
 $LNG['post'] = 'Post';
@@ -163,7 +158,7 @@ $LNG['camera'] = 'Camera';
 $LNG['capture'] = 'Capture';
 $LNG['send'] = 'Send';
 $LNG['shared_success'] = 'The post has been successfully shared on your <a href="%s" rel="loadpage"><strong>timeline</strong></a>.';
-$LNG['no_shared'] = 'Sorry but this message can\'t be shared.';
+$LNG['no_shared'] = 'Sorry, but this message can\'t be shared.';
 $LNG['share_desc'] = 'Are you sure do you want to share this message on your timeline?';
 $LNG['cancel'] = 'Cancel';
 $LNG['close'] = 'Close';
@@ -178,8 +173,8 @@ $LNG['1_is_safe'] = 'This message is marked as <strong>safe</strong> by an admin
 $LNG['0_is_safe'] = 'This comment is marked as <strong>safe</strong> by an administrator, thank you for your feedback.';
 $LNG['1_report_added'] = 'The message has been reported, thank you for your feedback.';
 $LNG['0_report_added'] = 'The comment has been reported, thank you for your feedback.';
-$LNG['1_report_error'] = 'Sorry but something went wrong while reporting this message, please refresh the page and try again.';
-$LNG['0_report_error'] = 'Sorry but something went wrong while reporting this comment, please refresh the page and try again.';
+$LNG['1_report_error'] = 'Sorry, but something went wrong while reporting this message, please refresh the page and try again.';
+$LNG['0_report_error'] = 'Sorry, but something went wrong while reporting this comment, please refresh the page and try again.';
 $LNG['1_is_deleted'] = 'The message has been removed, thank you for your feedback.';
 $LNG['0_is_deleted'] = 'The comment has been removed, thank you for your feedback.';
 $LNG['rep_comment'] = 'Comment';
@@ -225,11 +220,11 @@ $LNG['sidebar_people'] = 'People';
 $LNG['sidebar_tag'] = 'Hashtags';
 
 // MESSAGES / CHAT
-$LNG['lonely_here'] = 'It\'s lonely here, how about making some friends?';
+$LNG['lonely_here'] = 'Click the add friends button to chat with other users!';
 $LNG['chat_too_long'] = 'Sorry, but the maximum characters allowed per chat message is <strong>%s</strong>.';
 $LNG['blocked_by'] = 'The message could not be sent. <strong>%s</strong> blocked you.';
 $LNG['blocked_user'] = 'The message could not be sent. You\'ve blocked <strong>%s</strong>.';
-$LNG['chat_self'] = 'Sorry but we cannot deliver chat messages to yourself.';
+$LNG['chat_self'] = 'Sorry, but we cannot deliver chat messages to yourself.';
 $LNG['chat_no_user'] = 'You must select a user to chat with.';
 $LNG['view_more_conversations'] = 'View more conversations';
 $LNG['block'] = 'Block';
@@ -237,12 +232,12 @@ $LNG['unblock'] = 'Unblock';
 $LNG['poke'] = 'Poke';
 $LNG['poked'] = 'Poked';
 $LNG['conversation'] = 'Conversation';
-$LNG['start_conversation'] = 'You can start a conversation by chosing a person from your friends list.';
+$LNG['start_conversation'] = 'You can start a conversation by choosing a person from your friends list.';
 $LNG['send_message'] = 'Send Message';
 
 // MESSAGE FORM
-$LNG['label_food'] = 'Add a place where you ate at';
-$LNG['label_game'] = 'Add a played game';
+$LNG['label_food'] = 'Add a place where you\'ve eaten at';
+$LNG['label_game'] = 'Add a game you\'ve played';
 $LNG['label_visited'] = 'Add a visited location.';
 $LNG['label_map'] = 'Add a place.';
 $LNG['label_video'] = 'Share a YouTube link.';
