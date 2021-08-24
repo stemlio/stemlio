@@ -75,7 +75,7 @@ $LNG['notif_success_saved'] = 'Notifications has been successfully updated.';
 
 // MAIL CONTENT
 $LNG['welcome_mail'] = 'Welcome to %s';
-$LNG['user_created'] = 'Thank you for joining <strong>%s</strong>.<br /><br />Your username: <strong>%s</strong><br />Your Password: <strong>%s</strong><br /><br />You can log-in at: <a href="%s" target="_blank">%s</a>';
+$LNG['user_created'] = 'Thank you for joining <strong>%s</strong>.<br /><br />Your username: <strong>%s</strong><br /><br />You can log-in at: <a href="%s" target="_blank">%s</a>';
 $LNG['recover_mail'] = 'Password Recovery';
 $LNG['recover_content'] = 'A password recover was requested, if you didn\'t make this action please ignore this email. <br /><br />Your Username: <strong>%s</strong><br />Your Reset Key: <strong>%s</strong><br /><br />You can reset your password by accessing the following link: <a href="%s" target="_blank">%s</a>';
 $LNG['email_hello'] = 'Hello <strong>%s</strong>,<br /><br />';
