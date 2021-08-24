@@ -77,7 +77,7 @@ function PageMain() {
 
 		if($TMPL['registerMsg'] == 1) {
 			if($settings['mail']) {
-				sendMail($_POST['email'], sprintf($LNG['welcome_mail'], $settings['title']), sprintf($LNG['user_created'], $settings['title'], $_POST['username'], $_POST['password'], $CONF['url'], $settings['title']), $CONF['email']);
+				sendMail($_POST['email'], sprintf($LNG['welcome_mail'], $settings['title']), sprintf($LNG['user_created'], $settings['title'], $_POST['username'], $CONF['url'], $settings['title']), $CONF['email']);
 			}
 			$_SESSION['message'] = 'welcome';
 			header("Location: ".permalink($CONF['url']."/index.php?a=feed"));
