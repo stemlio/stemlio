@@ -343,7 +343,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`title`, `theme`, `perpage`, `censor`, `captcha`, `intervalm`, `intervaln`, `time`, `message`, `size`, `format`, `mail`, `sizemsg`, `formatmsg`, `cperpage`, `ilimit`, `climit`, `uperpage`, `sperpage`, `nperpage`, `nperwidget`, `lperpost`, `aperip`, `conline`, `ronline`, `mperpage`, `verified`, `chatr`, `email_activation`, `email_comment`, `email_like`, `email_new_friend`, `email_group_invite`, `email_page_invite`, `smiles`, `permalinks`, `fbapp`, `fbappid`, `fbappsecret`, `smtp_email`, `smtp_host`, `smtp_port`, `smtp_auth`, `smtp_username`, `smtp_password`, `language`, `email_provider`, `friends_limit`, `pages_limit`, `groups_limit`, `pages`, `groups`, `timezone`, `ad1`, `ad2`, `ad3`, `ad4`, `ad5`, `ad6`, `ad7`, `tracking_code`) VALUES
-('Stemlio', 'stemlio', 10, 'word1,word2', 1, 10000, 10000, 0, 500, 1048576, 'png,jpg,gif,jpeg', 1, 1048576, 'png,jpg,gif,jpeg', 3, 9, 500, 10, 10, 100, 10, 5, 3, 600, 10, 10, 0, 3, 0, 1, 1, 1, 1, 1, 1, 0, 0, '', '', 0, '', 0, 0, '', '', 'english', '', 2000, 50, 100, 1, 1, '', '', '', '', '', '', '', '', '');
+('Stemlio', 'stemlio', 10, 'word1,word2', 1, 10000, 10000, 0, 500, 1048576, 'png,jpg,gif,jpeg', 1, 1048576, 'png,jpg,gif,jpeg', 3, 9, 500, 10, 10, 100, 10, 5, 3, 600, 10, 10, 0, 3, 0, 1, 0, 1, 1, 1, 1, 0, 0, '', '', 0, '', 0, 0, '', '', 'english', '', 2000, 50, 100, 1, 1, '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
