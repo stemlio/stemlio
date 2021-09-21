@@ -381,7 +381,15 @@ class register {
 			}
 		}
 	}
-	
+
+	function verify_checkbox() {
+		if (isset($_POST['verification'])) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	function validate_values() {
 		// Create the array which contains the Language variable
 		$error = array();
@@ -418,6 +426,10 @@ class register {
 		if(!in_array(end(explode('@', $this->email)), explode(',', str_replace(', ', ',', $this->email_provider))) && $this->email_provider) {
 			$error[] .= 'invalid_email';
 		}
+
+		if($this->verify_checkbox() == false) {
+			$error[] .= 'invalid_checkbox';
+		 }
 		
 		return $error;
 	}
@@ -451,7 +463,7 @@ class logIn {
 	public $url; 		// Installation URL Property
 	public $username;	// Username Property
 	public $password;	// Password Property
-	public $remember = 1;	// DEFAULT = create cookie: option to remember the usr / pwd (_COOKIE) Property
+	public $remember;	// DEFAULT = create cookie: option to remember the usr / pwd (_COOKIE) Property
 	
 	function in() {
 		global $LNG;
@@ -462,12 +474,12 @@ class logIn {
 			// Regenerate the SID
 			session_regenerate_id();
 			
-			if($this->remember == 1) { // If checkbox, then set cookie
+			if(1 > 0) { // If checkbox, then set cookie *FIX THIS*
 				setcookie("username", $this->username, time() + 30 * 24 * 60 * 60); // Expire in one month
 				setcookie("password", md5($this->password), time() + 30 * 24 * 60 * 60); // Expire in one month
 			} else { // Else set session
 				$_SESSION['username'] = $this->username;
-				$_SESSION['password'] = md5($this->password);
+				$_SESSION['password'] = md5($this->password); 
 			}
 			
 			// Redirect the user to his personal profile
@@ -3564,7 +3576,7 @@ class feed {
 	
 	function showWelcome($message = null) {
 		global $LNG;
-		$output = '<div class="message-container"><div class="wf-img"></div><div class="wf-title">'.$LNG['welcome_feed_ttl'].'</div><div class="wf-text">'.$LNG['welcome_feed'].'</div></div>';
+		$output = '';
 		return $output;
 	}
 	

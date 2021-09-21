@@ -18,6 +18,7 @@ $LNG['user_alnum'] = 'The username must consists only from letters and numbers.'
 $LNG['user_too_short'] = 'The username must be between 3 and 32 characters.';
 $LNG['user_limit'] = 'Too many accounts created from this IP.';
 $LNG['invalid_email'] = 'Invalid email.';
+$LNG['invalid_checkbox'] = 'Please agree to our privacy policy and terms & conditions.';
 $LNG['invalid_user_pw'] = 'Invalid username or password.';
 $LNG['invalid_captcha'] = 'Invalid captcha.';
 $LNG['activate_email'] = 'An activation link has been sent to your email.';
@@ -35,7 +36,7 @@ $LNG['captcha'] = 'Captcha';
 $LNG['username_or_email'] = 'Username or Email';
 $LNG['welcome_title'] = 'Welcome';
 $LNG['forgot_password'] = 'Forgot your password?';
-$LNG['terms_conditions'] = 'By creating an account, you agree to our <a href="url" class="conditions-link" >terms & conditions</a>.';
+$LNG['terms_conditions'] = 'I agree to the <a href="https://stemlio.com/index.php?a=info&b=privacypolicy" class="conditions-link" >privacy policy</a> and <a href=" https://stemlio.com/index.php?a=info&b=termsandconditions" class="conditions-link" >terms & conditions</a>.';
 $LNG['all_rights_reserved'] = 'All rights reserved';
 
 $LNG['welcome_one'] = 'Connect';
