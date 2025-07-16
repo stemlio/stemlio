@@ -3,7 +3,7 @@ session_start();
 require_once('./includes/config.php');
 require_once('./includes/skins.php');
 require_once('./includes/classes.php');
-$db = new mysqli($CONF['host'], $CONF['user'], $CONF['pass'], $CONF['name']);
+$db = new mysqli($CONF['host'], $CONF['user'], $CONF['pass'], $CONF['name'], $CONF['port']);
 if ($db->connect_errno) {
     echo "Failed to connect to MySQL: (" . $db->connect_errno . ") " . $db->connect_error;
 }

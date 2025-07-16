@@ -48,6 +48,10 @@ function PageMain() {
 			list($timeline, $message) = $feed->getFeed(0, $_GET['filter']);
 			
 			$TMPL['messages'] = $timeline;
+			// Debug: Check if timeline has content
+			if(empty($timeline)) {
+				$TMPL['messages'] = '<div class="message-container">No posts to display. Create your first post!</div>';
+			}
 			
 			if($_SESSION['message'] == 'welcome') {
 				$TMPL['messages'] .= $feed->showWelcome('welcome_feed');
@@ -55,6 +59,10 @@ function PageMain() {
 			}
 
 			$rows = $skin->make();
+			// Debug: ensure rows has content
+			if(empty($rows)) {
+				$rows = '<div class="message-container">Feed area - No content available</div>';
+			}
 			
 			$skin = new skin('feed/sidebar'); $sidebar = '';
 			
@@ -77,7 +85,7 @@ function PageMain() {
 			$TMPL['birthdays'] = $feed->sidebarBirthdays();
 			$TMPL['friends'] = $feed->sidebarFriends(0, 0);
 			$TMPL['friendsactivity'] = $feed->sidebarFriendsActivity(20, 1);
-			if(count($feed->friendsArray[1]) < $feed->s_per_page) {
+			if(empty($feed->friendsArray[1]) || count($feed->friendsArray[1]) < $feed->s_per_page) {
 				$TMPL['suggestions'] = $feed->sidebarSuggestions($verify['interests']);
 			}
 			$TMPL['ad'] = generateAd($settings['ad2']);
@@ -107,6 +115,22 @@ function PageMain() {
 			$TMPL['top'] = $top;
 			$TMPL['rows'] = $rows;
 			$TMPL['sidebar'] = $sidebar;
+			
+			
+			$TMPL['url'] = $CONF['url'];
+			$TMPL['title'] = $LNG['title_feed'].' - '.$settings['title'];
+
+			// Load the Feed page plugins
+			unset($TMPL['plugins']);
+			foreach($plugins as $plugin) {
+				if(array_intersect(array("5"), str_split($plugin['type']))) {
+					$data = $feed->user; $data['site_url'] = $CONF['url']; $data['site_title'] = $settings['title']; $data['site_email'] = $CONF['email']; unset($data['password']); unset($data['salted']);
+					$TMPL['plugins'] .= plugin($plugin['name'], $data, 0);
+				}
+			}
+			
+			$skin = new skin('shared/timeline');
+			return $skin->make();
 		}
 	} else {
 		// If the session or cookies are not set, redirect to home-page
@@ -124,20 +148,5 @@ function PageMain() {
 			header('Location: '.permalink($CONF['url'].'/index.php?a=welcome'));
 		}
 	}
-
-	$TMPL['url'] = $CONF['url'];
-	$TMPL['title'] = $LNG['title_feed'].' - '.$settings['title'];
-
-	// Load the Feed page plugins
-	unset($TMPL['plugins']);
-	foreach($plugins as $plugin) {
-		if(array_intersect(array("5"), str_split($plugin['type']))) {
-			$data = $feed->user; $data['site_url'] = $CONF['url']; $data['site_title'] = $settings['title']; $data['site_email'] = $CONF['email']; unset($data['password']); unset($data['salted']);
-			$TMPL['plugins'] .= plugin($plugin['name'], $data, 0);
-		}
-	}
-	
-	$skin = new skin('shared/timeline');
-	return $skin->make();
 }
 ?>

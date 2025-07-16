@@ -22,8 +22,14 @@ class skin {
 	}
 	
 	public static function parse($skin) {		
-		$skin = preg_replace_callback('/{\$lng->(.+?)}/i', create_function('$matches', 'global $LNG; return $LNG[$matches[1]];'), $skin);
-		$skin = preg_replace_callback('/{\$([a-zA-Z0-9_]+)}/', create_function('$matches', 'global $TMPL; return (isset($TMPL[$matches[1]])?$TMPL[$matches[1]]:"");'), $skin);
+		$skin = preg_replace_callback('/{\$lng->(.+?)}/i', function($matches) {
+			global $LNG;
+			return $LNG[$matches[1]];
+		}, $skin);
+		$skin = preg_replace_callback('/{\$([a-zA-Z0-9_]+)}/', function($matches) {
+			global $TMPL;
+			return (isset($TMPL[$matches[1]]) ? $TMPL[$matches[1]] : "");
+		}, $skin);
 	
 		return $skin;
 	}

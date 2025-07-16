@@ -967,7 +967,7 @@ function PageMain() {
 						$month = intval($date[1]);
 						
 						// Calculate the percentage
-						$percentage = ($value * 100) / $val_max;
+						$percentage = $val_max > 0 ? ($value * 100) / $val_max : 0;
 						$TMPL[$val.'_stats'] .= '<li title="'.$LNG["month_$month"].' '.$date[2].': '.$value.' '.$LNG[$val].'"><span style="height:'.$percentage.'%"></span></li>';
 						$i++;
 					}

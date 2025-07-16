@@ -1861,7 +1861,8 @@ class feed {
 				</div>';
 			}
 			
-			$shared_title = $sharedMedia = $sharedContent = $group_title = $getPage = $this->page_data = '';
+			$shared_title = $sharedMedia = $sharedContent = $group_title = $getPage = '';
+			$this->page_data = array();
 			if($row['group']) {
 				$dataType = 2;
 				// If the message is viewed from the post page
@@ -6356,6 +6357,7 @@ class feed {
 		$result1 = $this->db->query($user1);
 		$result2 = $this->db->query($user2);
 		
+		$array = array();
 		while($row = $result1->fetch_assoc()) {
 			$array[$row['id']] = $row;
 		}
@@ -6364,7 +6366,9 @@ class feed {
 		}
 		
 		// Sort the array by the unique ID of the friendship entry
-		krsort($array);
+		if(!empty($array)) {
+			krsort($array);
+		}
 		
 		// Remove all the unnecessary array elements
 		$array = array_slice($array, 0, $this->s_per_page + 1);
@@ -7490,48 +7494,48 @@ function admin_stats($db, $type, $values = null, $category = null, $extra = null
 		(SELECT count(id) FROM `reports` WHERE `state` = 2) as deleted_reports";
 	} elseif($type == 1) {
 		$query = sprintf("SELECT
-		(SELECT count(idu) FROM users WHERE `date` >= '%s' AND `date` < '%s') as users_today,
-		(SELECT count(idu) FROM users WHERE `date` >= '%s' AND `date` < '%s') as users_yesterday,
-		(SELECT count(idu) FROM users WHERE `date` >= '%s' AND `date` < '%s') as users_two_days,
-		(SELECT count(idu) FROM users WHERE `date` >= '%s' AND `date` < '%s') as users_three_days,
-		(SELECT count(idu) FROM users WHERE `date` >= '%s' AND `date` < '%s') as users_four_days,
-		(SELECT count(idu) FROM users WHERE `date` >= '%s' AND `date` < '%s') as users_five_days,
-		(SELECT count(idu) FROM users WHERE `date` >= '%s' AND `date` < '%s') as users_six_days,
-		(SELECT COUNT(id) FROM pages WHERE `time` >= '%s' AND `time` < '%s') AS pages_today,
-		(SELECT COUNT(id) FROM pages WHERE `time` >= '%s' AND `time` < '%s') AS pages_yesterday,
-		(SELECT COUNT(id) FROM pages WHERE `time` >= '%s' AND `time` < '%s') AS pages_two_days,
-		(SELECT COUNT(id) FROM pages WHERE `time` >= '%s' AND `time` < '%s') AS pages_three_days,
-		(SELECT COUNT(id) FROM pages WHERE `time` >= '%s' AND `time` < '%s') AS pages_four_days,
-		(SELECT COUNT(id) FROM pages WHERE `time` >= '%s' AND `time` < '%s') AS pages_five_days,
-		(SELECT COUNT(id) FROM pages WHERE `time` >= '%s' AND `time` < '%s') AS pages_six_days,
-		(SELECT COUNT(id) FROM groups WHERE `time` >= '%s' AND `time` < '%s') AS groups_today,
-		(SELECT COUNT(id) FROM groups WHERE `time` >= '%s' AND `time` < '%s') AS groups_yesterday,
-		(SELECT COUNT(id) FROM groups WHERE `time` >= '%s' AND `time` < '%s') AS groups_two_days,
-		(SELECT COUNT(id) FROM groups WHERE `time` >= '%s' AND `time` < '%s') AS groups_three_days,
-		(SELECT COUNT(id) FROM groups WHERE `time` >= '%s' AND `time` < '%s') AS groups_four_days,
-		(SELECT COUNT(id) FROM groups WHERE `time` >= '%s' AND `time` < '%s') AS groups_five_days,
-		(SELECT COUNT(id) FROM groups WHERE `time` >= '%s' AND `time` < '%s') AS groups_six_days,
-		(SELECT COUNT(id) FROM messages WHERE `time` >= '%s' AND `time` < '%s') AS messages_today,
-		(SELECT COUNT(id) FROM messages WHERE `time` >= '%s' AND `time` < '%s') AS messages_yesterday,
-		(SELECT COUNT(id) FROM messages WHERE `time` >= '%s' AND `time` < '%s') AS messages_two_days,
-		(SELECT COUNT(id) FROM messages WHERE `time` >= '%s' AND `time` < '%s') AS messages_three_days,
-		(SELECT COUNT(id) FROM messages WHERE `time` >= '%s' AND `time` < '%s') AS messages_four_days,
-		(SELECT COUNT(id) FROM messages WHERE `time` >= '%s' AND `time` < '%s') AS messages_five_days,
-		(SELECT COUNT(id) FROM messages WHERE `time` >= '%s' AND `time` < '%s') AS messages_six_days,
-		(SELECT COUNT(id) FROM comments WHERE `time` >= '%s' AND `time` < '%s') AS comments_today,
-		(SELECT COUNT(id) FROM comments WHERE `time` >= '%s' AND `time` < '%s') AS comments_yesterday,
-		(SELECT COUNT(id) FROM comments WHERE `time` >= '%s' AND `time` < '%s') AS comments_two_days,
-		(SELECT COUNT(id) FROM comments WHERE `time` >= '%s' AND `time` < '%s') AS comments_three_days,
-		(SELECT COUNT(id) FROM comments WHERE `time` >= '%s' AND `time` < '%s') AS comments_four_days,
-		(SELECT COUNT(id) FROM comments WHERE `time` >= '%s' AND `time` < '%s') AS comments_five_days,
-		(SELECT COUNT(id) FROM comments WHERE `time` >= '%s' AND `time` < '%s') AS comments_six_days,
-		(SELECT COUNT(id) FROM messages WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_today,
-		(SELECT COUNT(id) FROM messages WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_yesterday,
-		(SELECT COUNT(id) FROM messages WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_two_days,
-		(SELECT COUNT(id) FROM messages WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_three_days,
-		(SELECT COUNT(id) FROM messages WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_four_days,
-		(SELECT COUNT(id) FROM messages WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_five_days,
-		(SELECT COUNT(id) FROM messages WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_six_days,
+		(SELECT count(idu) FROM `users` WHERE `date` >= '%s' AND `date` < '%s') as users_today,
+		(SELECT count(idu) FROM `users` WHERE `date` >= '%s' AND `date` < '%s') as users_yesterday,
+		(SELECT count(idu) FROM `users` WHERE `date` >= '%s' AND `date` < '%s') as users_two_days,
+		(SELECT count(idu) FROM `users` WHERE `date` >= '%s' AND `date` < '%s') as users_three_days,
+		(SELECT count(idu) FROM `users` WHERE `date` >= '%s' AND `date` < '%s') as users_four_days,
+		(SELECT count(idu) FROM `users` WHERE `date` >= '%s' AND `date` < '%s') as users_five_days,
+		(SELECT count(idu) FROM `users` WHERE `date` >= '%s' AND `date` < '%s') as users_six_days,
+		(SELECT COUNT(id) FROM `pages` WHERE `time` >= '%s' AND `time` < '%s') AS pages_today,
+		(SELECT COUNT(id) FROM `pages` WHERE `time` >= '%s' AND `time` < '%s') AS pages_yesterday,
+		(SELECT COUNT(id) FROM `pages` WHERE `time` >= '%s' AND `time` < '%s') AS pages_two_days,
+		(SELECT COUNT(id) FROM `pages` WHERE `time` >= '%s' AND `time` < '%s') AS pages_three_days,
+		(SELECT COUNT(id) FROM `pages` WHERE `time` >= '%s' AND `time` < '%s') AS pages_four_days,
+		(SELECT COUNT(id) FROM `pages` WHERE `time` >= '%s' AND `time` < '%s') AS pages_five_days,
+		(SELECT COUNT(id) FROM `pages` WHERE `time` >= '%s' AND `time` < '%s') AS pages_six_days,
+		(SELECT COUNT(id) FROM `groups` WHERE `time` >= '%s' AND `time` < '%s') AS groups_today,
+		(SELECT COUNT(id) FROM `groups` WHERE `time` >= '%s' AND `time` < '%s') AS groups_yesterday,
+		(SELECT COUNT(id) FROM `groups` WHERE `time` >= '%s' AND `time` < '%s') AS groups_two_days,
+		(SELECT COUNT(id) FROM `groups` WHERE `time` >= '%s' AND `time` < '%s') AS groups_three_days,
+		(SELECT COUNT(id) FROM `groups` WHERE `time` >= '%s' AND `time` < '%s') AS groups_four_days,
+		(SELECT COUNT(id) FROM `groups` WHERE `time` >= '%s' AND `time` < '%s') AS groups_five_days,
+		(SELECT COUNT(id) FROM `groups` WHERE `time` >= '%s' AND `time` < '%s') AS groups_six_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `time` >= '%s' AND `time` < '%s') AS messages_today,
+		(SELECT COUNT(id) FROM `messages` WHERE `time` >= '%s' AND `time` < '%s') AS messages_yesterday,
+		(SELECT COUNT(id) FROM `messages` WHERE `time` >= '%s' AND `time` < '%s') AS messages_two_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `time` >= '%s' AND `time` < '%s') AS messages_three_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `time` >= '%s' AND `time` < '%s') AS messages_four_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `time` >= '%s' AND `time` < '%s') AS messages_five_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `time` >= '%s' AND `time` < '%s') AS messages_six_days,
+		(SELECT COUNT(id) FROM `comments` WHERE `time` >= '%s' AND `time` < '%s') AS comments_today,
+		(SELECT COUNT(id) FROM `comments` WHERE `time` >= '%s' AND `time` < '%s') AS comments_yesterday,
+		(SELECT COUNT(id) FROM `comments` WHERE `time` >= '%s' AND `time` < '%s') AS comments_two_days,
+		(SELECT COUNT(id) FROM `comments` WHERE `time` >= '%s' AND `time` < '%s') AS comments_three_days,
+		(SELECT COUNT(id) FROM `comments` WHERE `time` >= '%s' AND `time` < '%s') AS comments_four_days,
+		(SELECT COUNT(id) FROM `comments` WHERE `time` >= '%s' AND `time` < '%s') AS comments_five_days,
+		(SELECT COUNT(id) FROM `comments` WHERE `time` >= '%s' AND `time` < '%s') AS comments_six_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_today,
+		(SELECT COUNT(id) FROM `messages` WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_yesterday,
+		(SELECT COUNT(id) FROM `messages` WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_two_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_three_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_four_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_five_days,
+		(SELECT COUNT(id) FROM `messages` WHERE `type` = 'shared' AND `time` >= '%s' AND `time` < '%s') AS shared_six_days,
 		(SELECT count(id) FROM `likes` WHERE `time` >= '%s' AND `time` < '%s') as likes_today,
 		(SELECT count(id) FROM `likes` WHERE `time` >= '%s' AND `time` < '%s') as likes_yesterday,
 		(SELECT count(id) FROM `likes` WHERE `time` >= '%s' AND `time` < '%s') as likes_two_days,

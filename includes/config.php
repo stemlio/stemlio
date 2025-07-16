@@ -5,12 +5,13 @@ $CONF = $TMPL = array();
 
 // The MySQL credentials
 $CONF['host'] = 'localhost';
-$CONF['user'] = 'root';
-$CONF['pass'] = '';
-$CONF['name'] = 'stemlio';
+$CONF['user'] = 'u985760683_conrad';
+$CONF['pass'] = 'SabrinaLou2014!';
+$CONF['name'] = 'u985760683_stemlio';
+$CONF['port'] = 3306;
 
 // The Installation URL
-$CONF['url'] = 'http://localhost/';
+$CONF['url'] = 'https://stemlio.com';
 
 // The Notifications e-mail
 $CONF['email'] = 'notifications@yourdomain.com';

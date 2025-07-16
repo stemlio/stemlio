@@ -1,0 +1,47 @@
+# Cache files
+cache/cache_*.txt
+cache/cache_*.touch
+
+# Upload files (user content)
+uploads/avatars/*.png
+uploads/avatars/*.jpg
+uploads/avatars/*.jpeg
+uploads/avatars/*.gif
+!uploads/avatars/default.png
+!uploads/avatars/index.html
+
+uploads/covers/*.png
+uploads/covers/*.jpg
+uploads/covers/*.jpeg
+uploads/covers/*.gif
+!uploads/covers/default.png
+!uploads/covers/index.html
+
+uploads/media/*
+!uploads/media/index.html
+
+# Temporary files
+*.tmp
+*.log
+cookies.txt
+admin_cookies.txt
+feed_output.html
+feed_logged_in.html
+
+# Deployment files (not needed in repo)
+upload-to-hostinger.sh
+railway.json
+nixpacks.toml
+Procfile
+composer.json
+app.json
+
+# Security files
+upgrade_security.php
+
+# Local deployment guides (optional)
+DEPLOY_*.md
+!DEPLOY_HOSTINGER.md
+
+# Mac files
+.DS_Store
